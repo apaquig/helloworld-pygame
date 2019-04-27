@@ -30,10 +30,10 @@ class SplashScreen:
         _font = pygame.font.SysFont('Times New Roman',27)
         #_font = pygame.freetype.SysFont('Arial', 20)
         
-        giiata_logo = pygame.image.load('./images/Logo-GIIATa.png')
+        giiata_logo = pygame.image.load('./images/20633.jpg')
         giiata_logo = pygame.transform.scale(giiata_logo, (180,160))
         
-        robot = pygame.image.load('./images/Blue-Robot.png')
+        robot = pygame.image.load('./images/people.png')
         robot = pygame.transform.scale(robot, (128, 128))
         
         screen = pygame.display.set_mode((width, height))
@@ -67,9 +67,9 @@ class SplashScreen:
 
             
             screen.fill((255,255,255))
-            self.ut.drawText(screen, 'Grupo de Investigación en Inteligencia Artificial y Tecnologías de Asistencia', (10,10,200), ((width/2)-100, 10, 500, 50), _font)
+           # self.ut.drawText(screen, 'Grupo de Investigación en Inteligencia Artificial y Tecnologías de Asistencia', (10,10,200), ((width/2)-100, 10, 500, 50), _font)
 
-            self.ut.drawText(screen, 'Inteligencia Artificial 1 - Algoritmos de búsqueda', (100,10,200), ((width/2)-100, 73, 500, 100), _font)
+            self.ut.drawText(screen, 'I.A.1 - Algoritmos de búsqueda', (100,10,200), ((width/2)-100, 73, 500, 100), _font)
             
             screen.blit(giiata_logo,(10,10))
             
